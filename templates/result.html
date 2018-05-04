@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dojo Fruit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+input{
+    display: block;
+}
+form{
+    margin-left: 50%;
+    color: gray;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align:center; color: rgb(10, 10, 122);">THANK YOU FOR YOUR ORDER!</h1>
+    <h2>Total number is {{sum}}</h2>
+<table>
+  <tr>
+    <th>Fruit Name</th>
+    <th>Quantity</th>
+   
+  </tr>
+  <tr>
+    <td>Strawberry</td>
+    <td>{{strawberry}}</td>
+    
+  </tr>
+ 
+  
+  <tr>
+    <td>Raspberry</td>
+    <td> {{raspberry}}</td>
+   
+  </tr>
+  <tr>
+    <td>Apple</td>
+    <td>{{apple}}</td>
+ </tr>
+  
+</table>
+
+<h3 style="text-align: center; color: grey">Your Information</h3>
+
+<p>Name:  {{name}}</p>
+<p>Your Student Id:  {{studentid}}</p>
+
+</body>
+</html>
